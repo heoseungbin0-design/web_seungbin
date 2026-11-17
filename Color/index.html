@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배색노트 | 계절별 컬러 큐레이션</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 상단 헤더 -->
+     
+     <h class="site-header">
+        <div class="header-inner">
+     <h1>배색노트<span>PALETTE NOTE</span></h1>
+     <p>사계절과 상황별 무드에 맞춘 컬러 조합 큐레이션 </p>
+        </div>
+  
+</header>
+
+
+<!-- 선택 메뉴(계절+무드) -->
+
+<nav class="filter-bar">
+    <div class="filter-inner">
+        <!-- 계절 -->
+         <div class="menu-group">
+         <span class="group-label">계절별</span>
+        <button type="button" data-season="all">전체</button>
+        <button type="button" data-season="spring">봄</button>
+        <button type="button" data-season="summer">여름</button>
+        <button type="button" data-season="autumn">가을</button>
+        <button type="button" data-season="winter">겨울</button>
+    </div>
+
+    <!-- 무드 -->
+     <div class="menu-group">
+        <span class="group-label">무드별</span>
+        <button type="button" class="filter-btn" data-category="pastel">모던.심플</button>
+        <button type="button" class="filter-btn" data-category="vivid">레트로</button>
+        <button type="button" class="filter-btn" data-category="muted">비비드</button>
+        <button type="button" class="filter-btn" data-category="dark">파스텔</button>
+        </div>
+    </div>
+</nav>
+
+<!-- 메인 좌:목록 우:미리보기-->
+ <main>
+    <section id="palette-list">
+        <div class="section-top">
+            <h2 id="current-section">전체 시즌 배색</h2>
+            <span id="palette-count">총 0개 조합</span>
+        </div>
+        <div id="card-container">
+
+        </div>
+ </section>
+
+ <!-- 우측: 배색 미리보기 -->
+  <aside id="preview-area">
+    <div class="preview-header">
+        <h2 id="preview-title">배색 미리보기</h2>
+        <button type="button" id="rotate-btn">↻순서 바꾸기</button>
+         </div>
+    </aside>
+  </main>
+
+  <!-- 하단 -->
+   <footer>
+    <p>웹프로그래밍 프로젝트 | 배색노트</p>
+   </footer>
+
+    
+</body>
+</html>
